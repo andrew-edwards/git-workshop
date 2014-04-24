@@ -11,6 +11,8 @@ Andy adding this on 24th April. Then adding this. And now this..... And again. A
 
 Okay, adding this line now (11:51am, 24apr14). It's not adding a backup file when you delete the back up - if you restart Emacs it then does do a new backup file.
 
+Editing again.
+
 git-workshop is a repository for learning how to use git version control.
 Also included are examples for using *Latex* and the R package *knitr* to apply version control to documents
 which are to be edited by more than one person, working collaboratively.
