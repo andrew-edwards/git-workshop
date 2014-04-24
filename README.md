@@ -7,11 +7,7 @@ Hello World!
 
 Hello again.... Andy's edit.
 
-Andy adding this on 24th April. Then adding this. And now this..... And again. And again....
-
-Okay, adding this line now (11:51am, 24apr14). It's not adding a backup file when you delete the back up - if you restart Emacs it then does do a new backup file.
-
-Editing again.
+Okay, figured out my problems - I was looking at the 'latest commit' (not my home git-workshop version), and so refreshing wouldn't update to the latest pushed version, it would just refresh a particular commit (which was no longer the latest, but was still a particular commit).
 
 git-workshop is a repository for learning how to use git version control.
 Also included are examples for using *Latex* and the R package *knitr* to apply version control to documents
