@@ -11,7 +11,11 @@ Okay, figured out my problems - I was looking at the 'latest commit' (not my hom
 
 If you add text, save file, then remove it again and save, git knows that nothing has changed....
 
-Changing this in the master version, then want to merge this and the line added in the test branch.
+[Changing this in the master version, then want to merge this and the line added in the test branch.]
+
+[Adding this in the 'test' branch, then going to try merging back again..... ]
+
+Resolved those two (just in emacs - easy enough as can easily add text like this sentence).
 
 git-workshop is a repository for learning how to use git version control.
 Also included are examples for using *Latex* and the R package *knitr* to apply version control to documents
