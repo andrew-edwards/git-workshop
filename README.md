@@ -7,6 +7,8 @@ Hello World!
 
 Hello again.... Andy's edit.
 
+Andy adding this on 24th April.
+
 git-workshop is a repository for learning how to use git version control.
 Also included are examples for using *Latex* and the R package *knitr* to apply version control to documents
 which are to be edited by more than one person, working collaboratively.
