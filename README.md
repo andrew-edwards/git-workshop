@@ -9,7 +9,9 @@ Hello again.... Andy's edit.
 
 Okay, figured out my problems - I was looking at the 'latest commit' (not my home git-workshop version), and so refreshing wouldn't update to the latest pushed version, it would just refresh a particular commit (which was no longer the latest, but was still a particular commit).
 
-If you add text, save file, then remove it again and save, git knows that nothing has changed.... 
+If you add text, save file, then remove it again and save, git knows that nothing has changed....
+
+Adding this in the 'test' branch, then going to try merging back again..... 
 
 git-workshop is a repository for learning how to use git version control.
 Also included are examples for using *Latex* and the R package *knitr* to apply version control to documents
