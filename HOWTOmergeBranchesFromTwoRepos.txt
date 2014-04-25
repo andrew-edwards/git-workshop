@@ -1,0 +1,83 @@
+March 18, 2014, C Grandin
+
+This will explain how to merge Martell's IPHC-developer branch into yours.
+
+Assuming you have executed these commmands:
+git clone https://github.com/your-github-name/iSCAM
+git remote add smartell https://github.com/smartell/iSCAM
+git remote add cgrandin https://github.com/cgrandin/iSCAM
+git fetch smartell
+git fetch cgrandin
+
+Take a look at ALL remote branches in the repository, including the cached remote branches,
+it should look something like this:
+
+git branch -r
+
+  smartell/CAPAM
+  smartell/IPHC
+  smartell/IPHC-developer
+  smartell/LNclass
+  smartell/PacificHerring
+  smartell/SOKherring
+  smartell/SilverHake
+  smartell/developer
+  smartell/equilibrium
+  smartell/gh-pages
+  smartell/halibut
+  smartell/master
+  smartell/twoSexPar
+  cgrandin/CAPAM
+  cgrandin/IPHC
+  cgrandin/IPHC-developer
+  cgrandin/LNclass
+  cgrandin/PacificHerring
+  cgrandin/SOKherring
+  cgrandin/SilverHake
+  cgrandin/developer
+  cgrandin/equilibrium
+  cgrandin/gh-pages
+  cgrandin/halibut
+  cgrandin/master
+  cgrandin/twoSexPar
+  origin/CAPAM
+  origin/HEAD -> origin/master
+  origin/IPHC
+  origin/IPHC-developer
+  origin/LNclass
+  origin/PacificHerring
+  origin/SOKherring
+  origin/SilverHake
+  origin/developer
+  origin/equilibrium
+  origin/gh-pages
+  origin/halibut
+  origin/master
+  origin/twoSexPar
+
+If you are missing IPHC-developer or any other branches at this early stage just re-clone and start this over.
+
+You must now create a local branch based on your origin/IPHC-developer:
+
+git checkout -b IPHC-developer origin/IPHC-developer
+or using the alias:
+git cb IPHC-developer origin/IPHC-developer
+
+Make sure it is there:
+git branch
+git checkout IPHC-developer
+
+You should now be in the branch IPHC-developer
+Now, merge my changes, becuase I got the compilation working for iscam.tpl:
+
+git merge cgrandin/IPHC-developer
+
+Now merge Steve's changes:
+
+git merge smartell/IPHC-developer
+
+To merge in specific commits from Steve's (or anyone's) repository, use git cherry-pick SHA
+This is a good webpage to get started on that:
+http://gitready.com/intermediate/2009/03/04/pick-out-individual-commits.html
+
+Chris

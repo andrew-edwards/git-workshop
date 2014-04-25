@@ -11,7 +11,6 @@ variance
 *.out
 *.cpp
 *.pdf
-*.txt
 *.eva
 *.exe
 *.htp

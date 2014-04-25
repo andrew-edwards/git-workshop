@@ -81,7 +81,8 @@ Type the following to clone your repository onto your local machine:
       git reset --soft HEAD~N           <Undo commits safely. Move back N commits, keeping changes from last N-1 commits>
       git reset --hard HEAD~N           <Move back N commits, destroying changes made in latest N-1 commits>
       git log --diff-filter=D --summary <Shows all commits in which files were deleted>
-
+      git checkout -- FILENAME          <Undo an unstaged/uncommitted change to FILENAME, i.e. get the file back if deleted>
+      git checkout --patch B FILE       <Merge changes to FILE from branch B into your current branch>
 ## Useful Git aliases
       git r                             <View remote URLs for the project, same as 'git remote -v'>
       git s                             <View status of the repository, same as 'git status'>
