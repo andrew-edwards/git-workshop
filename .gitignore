@@ -18,6 +18,8 @@ variance
 *.par
 *.rep
 *.std
+*~
+*.ini
 
 .RData
 .RHistory

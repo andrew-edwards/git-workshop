@@ -7,7 +7,7 @@ Hello World!
 
 Hello again.... Andy's edit.
 
-Okay, figured out my problems - I was looking at the 'latest commit' (not my home git-workshop version), and so refreshing wouldn't update to the latest pushed version, it would just refresh a particular commit (which was no longer the latest, but was still a particular commit).
+Okay, figured out my problems - I was looking at the 'latest commit' of the Network Graph Visualiser, not my home git-workshop version. So refreshing wouldn't update to the latest pushed version, it would just refresh a particular commit (which was no longer the latest, but was still a particular commit).
 
 If you add text, save file, then remove it again and save, git knows that nothing has changed....
 
