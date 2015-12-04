@@ -1,3 +1,6 @@
+4th Dec 2015: from github directory, just do
+git clone https://github.com/hakeJTC/hakeAssess
+
 2nd June 2015: Andy's git push stopped working, giving RPC error, with 'the remote end hung up unexpectedly'. This was on my size-spectra-methods repo, but another one still worked. I think it may have been caused by a colleague doing and then accepting his own pull request, which is a different order to what we normally do. It had worked fine before that.
 
 Solution, thanks to Chris:
