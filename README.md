@@ -1,5 +1,5 @@
 4th Dec 2015: from github directory, just do
-git clone https://github.com/hakeJTC/hakeAssess
+git clone https://github.com/hakeJTC/hakeAssess - not using that now.
 
 2nd June 2015: Andy's git push stopped working, giving RPC error, with 'the remote end hung up unexpectedly'. This was on my size-spectra-methods repo, but another one still worked. I think it may have been caused by a colleague doing and then accepting his own pull request, which is a different order to what we normally do. It had worked fine before that.
 
@@ -124,4 +124,49 @@ posh-git is the project which is the Git Shell we have been using here. Check ou
 <a href="https://github.com/dahlbyk/posh-git" target="_blank">posh-git</a>
 
 ---
+## Branching (Chris explained to Andy, 10/6/16)
 
+It's basically all in Chris's Powerpoint, but copying and summarising here. The idea is that you want to change something, but don’t want your code to break in the meantime. You want to be able to revert back to a particular point in time, and then possibly delete the extra code that you tried (if it didn't work). If you just carry on as normal it's a bit fiddly to remove the unwanted commits from GitHub, and having two branches means that you can easily switch to see how the code used to look.
+
+Create a branch and go to it:
+
+	git cb test
+
+You will now have a new branch called test, identical to the master. You will be in that branch, as seen in your shell prompt.
+
+To view all branches (current one in green):
+
+	git branch
+
+To change to a branch:
+
+	git co test
+
+Commit and push as usual ('git push' will give an error and tell you the full command you need). And then to go back to master:
+
+	git co master
+
+When in master, to merge in the commits from the test branch:
+
+	git merge test
+
+To delete a branch:
+
+	git branch –d test
+	git push origin --delete test
+
+where the second one deletes it from GitHub.
+
+If you edit a file in a branch and do not commit or stash it, then git won't let you switch to another branch. But it seems okay with that if test and master are the same (i.e. the first time you do an edit). Once you've done a commit on test then you can't switch without committing or stashing. Stashing is just parking something (but not committing it) so you can then switch branches (e.g. to see what the code says in another branch). Just do, from test:
+
+	git stash
+	git co master
+Look at your code in master.Then
+
+	git co test
+	git stash apply
+to retrieve the stashed version. Advisable to do this straight away (i.e. don't leave for the night with something stashed as you'll forget about it, and the command line prompt doesn't highlight that you have something stashed). To see what you have stashed:
+
+	git stash list
+
+---
