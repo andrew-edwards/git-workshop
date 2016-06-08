@@ -14,6 +14,8 @@ edit the .git/config file   -- mine had some http:// addresses when they should 
 
 Restarted shell, and it works. 
 
+24th May 2016: Had same error as noted above (but config file had https), but worked fine when I went home. So it was just timing out at work because the internet was so slow. Could git push straight away at home. 
+
 ---
 # git-workshop
 
@@ -169,4 +171,22 @@ to retrieve the stashed version. Advisable to do this straight away (i.e. don't 
 
 	git stash list
 
+**Compare a file across branches**
+
+	git difftool branch1 branch2 path/filename
+
+where branch1 is 'older', e.g.
+
+	git difftool master binData code/countsFunctions.r
+
+where 
+
+	git difftool 
+
+opens a window which makes it easier to see changes than just using
+
+	git diff
+
+
+	
 ---
