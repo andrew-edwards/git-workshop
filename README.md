@@ -193,6 +193,24 @@ Also,
 
 opens up the difftool window for one file, then when you close the window it opens a new one for the next file - so it looks like it systematically goes through all files in turn.
 
+**From Chris regarding Diffmerge - I haven't tried yet**
+
+Yes - You can set it up to use third party tools. After a lot of research, I found Diffmerge to be the best (it does by-character diff and it even has context menu ability in windows explorer). It can also be used for the diffmerge command if you like. I haven't used it across branches, so thanks for that syntax. If you want to try this with Diffmerge, go here: https://sourcegear.com/diffmerge/
+
+To make it (or any other) your default for git difftool, put this at the bottom of your .gitconfig:
+[diff]
+    tool = DiffMerge
+[difftool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+
+And for mergetool:
+[merge]
+    tool = DiffMerge
+[mergetool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+    trustExitCode = true
+[mergetool]
+    keepBackup = false
 
 	
 ---
