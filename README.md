@@ -187,6 +187,12 @@ opens a window which makes it easier to see changes than just using
 
 	git diff
 
+Also, 
+
+	git difftool branch1 branch2
+
+opens up the difftool window for one file, then when you close the window it opens a new one for the next file - so it looks like it systematically goes through all files in turn.
+
 
 	
 ---
