@@ -148,6 +148,8 @@ Commit and push as usual ('git push' will give an error and tell you the full co
 
 	git co master
 
+Sometimes get error 'Unlink of file failed, should I try again?' for .eps file that I have open. I answered no, but then the file does not revert to the version in master; so should really close the file and then say yes. 
+
 When in master, to merge in the commits from the test branch:
 
 	git merge test
